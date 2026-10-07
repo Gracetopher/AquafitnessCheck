@@ -2,7 +2,7 @@ BASE = "https://shop.baederportal-duisburg.de/de/bookings/block_list/bookable/0/
 import json, os, pathlib, requests
 from bs4 import BeautifulSoup
 TABS = [3, 9]  # 3 = Aquafitnesskurse, 9 = Aquafitness Aktiv
-KEYWORD = "Neudorf"
+KEYWORD = "Hamborn"
 NTFY_TOPIC = os.environ["NTFY_TOPIC"]
 SEEN = pathlib.Path("seen.json")
 
