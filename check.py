@@ -1,4 +1,6 @@
 BASE = "https://shop.baederportal-duisburg.de/de/bookings/block_list/bookable/0/tab/{tab}/sort_field/address_meta_name/sort_order/asc/?tab={tab}&items_per_page=100&page=1"
+import json, os, pathlib, requests
+from bs4 import BeautifulSoup
 TABS = [3, 9]  # 3 = Aquafitnesskurse, 9 = Aquafitness Aktiv
 KEYWORD = "Neudorf"
 NTFY_TOPIC = os.environ["NTFY_TOPIC"]
